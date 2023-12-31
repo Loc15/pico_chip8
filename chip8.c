@@ -107,6 +107,7 @@ void initKeypad(void){
 void handle_input(chip8_t *chip8){
     for(int i = 26; i < 30; i++){
             gpio_put(i, 1);
+            sleep_us(50);
             for(int j = 7; j < 11; j++){
                 uint8_t pos = (j - 7) + ((i-26) * 4);
                 chip8->keypad[pos] = gpio_get(j);
