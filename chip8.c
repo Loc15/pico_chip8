@@ -9,7 +9,7 @@
 #include "vga_graphics.h"
 
 /*ROMS*/
-#include "Space_Invaders.h"
+#include "games/Space_Invaders.h"
 
 typedef struct {
     uint16_t window_width;
