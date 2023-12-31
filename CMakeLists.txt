@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 # Pull in SDK (must be before project)
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
+set(PICO_BOARD adafruit_feather_rp2040)
+
 project(chip8 C CXX ASM)
 
 # Initialize the SDK
